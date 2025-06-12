@@ -14,7 +14,6 @@ ingress:
   ingressClassName: "alb"
   annotations: 
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/ip-address-type: dualstack
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/load-balancer-name: nginx
     alb.ingress.kubernetes.io/group.name: nginx
