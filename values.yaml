@@ -9,6 +9,18 @@ service:
   type: ClusterIP
   port: 80
 
+ingress:
+  enabled: true
+  className: "alb"
+  annotations: {}
+  host: web.beomj.link
+  path: /
+  pathType: Prefix
+  tls: []
+  # - secretName: web-tls
+  #   hosts:
+  #     - web.beomj.link
+
 resources:
   limits:
     cpu: 100m
